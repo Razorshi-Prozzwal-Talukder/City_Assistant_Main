@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndroidEatit</string>
+    <string name="slogan">Welcome tO Sylhet. Here i am your assistent. Order me what do you want. i am always ready for you.</string>
+    <string name="welcome">City Assistant</string>
+    <string name="sectorview">Dear sir, I am always ready to serve you. See, Here are tow Options. Choose what you have wanted to know.</string>
+    <string name="asaperson">Thanks for choosing FoodWorld option.Here you can see three options. Select one which you want to do.</string>
+    <string name="phn_nmbr">Phone Number</string>
+    <string name="password">Password</string>
+</resources>
