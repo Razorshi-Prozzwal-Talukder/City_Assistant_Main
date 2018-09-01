@@ -26,7 +26,9 @@
         <activity android:name=".PersonSelection" />
         <activity android:name=".AdminActivity" />
         <activity android:name=".ManagerActivity" />
-        <activity android:name=".CustomerActivity"></activity>
+        <activity android:name=".CustomerActivity" />
+        <activity android:name=".ManagerEntryActivity" />
+        <activity android:name=".ValidationForm"></activity>
     </application>
 
 </manifest>

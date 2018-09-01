@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".SignIn">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:text="Registration Form"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="35sp"
+        />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPersonName" />
+
+    <!--<EditText-->
+        <!--android:id="@+id/email"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Email"-->
+        <!--android:textColorHint="@android:color/white"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:inputType="textPersonName" />-->
+
+    <EditText
+        android:id="@+id/resname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Restaurent Name"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/phno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/cnpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="30dp"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/SignInButtonDesign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+</LinearLayout>

@@ -38,7 +38,8 @@ public class PersonSelection extends AppCompatActivity {
         manager.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PersonSelection.this, "Select as a Manager", Toast.LENGTH_SHORT).show();
+                Intent ManagerEntryActivity= new Intent(PersonSelection.this, ManagerEntryActivity.class);
+                startActivity(ManagerEntryActivity);
             }
         });
 
