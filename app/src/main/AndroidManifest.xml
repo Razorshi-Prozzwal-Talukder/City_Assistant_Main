@@ -28,7 +28,8 @@
         <activity android:name=".ManagerActivity" />
         <activity android:name=".CustomerActivity" />
         <activity android:name=".ManagerEntryActivity" />
-        <activity android:name=".ValidationForm"></activity>
+        <activity android:name=".ValidationForm" />
+        <activity android:name=".ManagerLogin"></activity>
     </application>
 
 </manifest>

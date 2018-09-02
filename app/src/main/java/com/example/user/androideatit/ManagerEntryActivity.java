@@ -29,8 +29,8 @@ public class ManagerEntryActivity extends AppCompatActivity {
         managerLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(ManagerEntryActivity.this, "Select Sign in.", Toast.LENGTH_SHORT).show();
-
+                Intent ManagerLogin = new Intent(ManagerEntryActivity.this, ManagerLogin.class);
+                startActivity(ManagerLogin);
             }
         });
 

@@ -16,11 +16,15 @@ import com.basgeekball.awesomevalidation.ValidationStyle;
 import com.basgeekball.awesomevalidation.utility.RegexTemplate;
 import com.example.user.androideatit.Model.Manager;
 import com.example.user.androideatit.Model.User;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class ValidationForm extends AppCompatActivity {
 
@@ -28,9 +32,8 @@ public class ValidationForm extends AppCompatActivity {
     Button submit;
     TextView textView;
     AwesomeValidation awesomeValidation;
-    Boolean numberExist;
-
     DatabaseReference managerForm;
+    Map<String, Boolean> numbers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,10 +46,13 @@ public class ValidationForm extends AppCompatActivity {
         textView.setTypeface(face);
 
 
-
+        numbers = new HashMap<>();
         awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
+        loadNumbers();
         updateUI();
+
     }
+
 
     private void updateUI() {
 
@@ -73,19 +79,11 @@ public class ValidationForm extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
 
 
-            //Int Firebase
-//            final FirebaseDatabase database = FirebaseDatabase.getInstance();
-//            final DatabaseReference manager_form =  database.getReference("Manager");
-
             @Override
             public void onClick(View view) {
 
                 if(awesomeValidation.validate()){
-//                    Toast.makeText(ValidationForm.this, "Data pass successfully!!!", Toast.LENGTH_SHORT).show();
 
-//                    final ProgressDialog mDialog = new ProgressDialog(ValidationForm.this);
-//                    mDialog.setMessage("Please Waiting....");
-//                    mDialog.show();
                     if(isNumberExist(phno.getText().toString())){
 
                         Toast.makeText(ValidationForm.this,"Phone Number is Already Registered",Toast.LENGTH_SHORT).show();
@@ -96,37 +94,6 @@ public class ValidationForm extends AppCompatActivity {
                         formadd();
                     }
 
-
-
-//                    managerForm.addValueEventListener(new ValueEventListener() {
-//                        @Override
-//                        public void onDataChange(DataSnapshot dataSnapshot) {
-//
-//                            Log.i("Managersss",phno.getText().toString());
-//
-//
-//                            //Check If already User Phone
-//                            if (dataSnapshot.hasChild(phno.getText().toString())){
-////                                mDialog.dismiss();
-//                            }
-//                            else{
-////                                mDialog.dismiss();
-////                                Manager manager = new Manager(fname.getText().toString(),email.getText().toString(),resname.getText().toString(),pass.getText().toString());
-////                                manager_form.child(phno.getText().toString()).setValue(manager);
-////                                Toast.makeText(ValidationForm.this,"Registration Successfully !!!",Toast.LENGTH_SHORT).show();
-////                                finish();
-////                                Log.i("Managersss", "Called");
-////                                formadd();
-//                            }
-//
-//                        }
-//
-//                        @Override
-//                        public void onCancelled(DatabaseError databaseError) {
-//
-//                        }
-//                    });
-//
                 }
                 else{
                     Toast.makeText(ValidationForm.this, "Wrong!!!", Toast.LENGTH_SHORT).show();
@@ -152,34 +119,49 @@ public class ValidationForm extends AppCompatActivity {
     }
 
     private boolean isNumberExist(final String number){
-        numberExist = false;
+        if(numbers.get(number) == null)
+        {
+            return false;
+
+        }
+        else
+        {
+            return true;
+        }
+    }
+
+    private void loadNumbers() {
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Manager");
-        reference.addValueEventListener(new ValueEventListener() {
+        reference.addChildEventListener(new ChildEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-
-
-
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 Manager manager = dataSnapshot.getValue(Manager.class);
-                Log.i("Managersss"," "+manager.getPhone()+" "+number);
+                numbers.put(manager.getPhone(),true);
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+            }
 
 
-                if(number.equals(manager.getPhone().trim())){
-                        numberExist=true;
-                    }
-//                if(dataSnapshot.getKey().equals("phone"))
-//                    if(number.equals(dataSnapshot.getValue())){
-//                        numberExist=true;
-//
-//                    }
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
             }
+
         });
-        return numberExist;
+
     }
 
 }
