@@ -19,7 +19,7 @@
             android:id="@+id/edtPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/phn_nmbr"
+            android:hint="Phone Number"
             android:textColor="@android:color/white"
             android:textColorHint="@android:color/white"
             android:textSize="34sp"

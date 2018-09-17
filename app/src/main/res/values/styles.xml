@@ -7,10 +7,11 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    
+
     <style name="SignUpButtonDesign">
         <item name="android:background">#3aa6a3</item>
     </style>
+
     <style name="SignInButtonDesign">
         <item name="android:background">#7dca3f</item>
     </style>
@@ -18,6 +19,7 @@
     <style name="Foodworld">
         <item name="android:background">#1785da</item>
     </style>
+
     <style name="Attractiveplaces">
         <item name="android:background">#bc2aa8</item>
     </style>
@@ -25,13 +27,18 @@
     <style name="Admin">
         <item name="android:background">#e20e20</item>
     </style>
+
     <style name="Manager">
         <item name="android:background">#3ab6d5</item>
     </style>
+
     <style name="Customer">
         <item name="android:background">#2abc3d</item>
     </style>
 
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
 </resources>

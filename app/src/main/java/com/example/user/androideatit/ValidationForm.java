@@ -62,10 +62,11 @@ public class ValidationForm extends AppCompatActivity {
         phno = findViewById(R.id.phno);
         pass = findViewById(R.id.pass);
         cnpass = findViewById(R.id.cnpass);
+
         submit = findViewById(R.id.submit);
 
         managerForm = FirebaseDatabase.getInstance().getReference("Manager");
-//
+
 
         String regexPassword = "(?=.*[a-z])(?=.*[A-Z])(?=.*[\\d])(?=.*[~`!@#\\$%\\^&\\*\\(\\)\\-_\\+=\\{\\}\\[\\]\\|\\;:\"<>,./\\?]).{8,}";
 
@@ -89,7 +90,7 @@ public class ValidationForm extends AppCompatActivity {
                         Toast.makeText(ValidationForm.this,"Phone Number is Already Registered",Toast.LENGTH_SHORT).show();
 
                     }
-//                    isNumberExist("018215141");
+
                     else{
                         formadd();
                     }
@@ -112,8 +113,8 @@ public class ValidationForm extends AppCompatActivity {
         String password= pass.getText().toString().trim();
 
         String id= managerForm.push().getKey();
-        Manager manager = new Manager(id, name, phone, restaurant, password);
-        managerForm.child(id).setValue(manager);
+        Manager manager = new Manager(name, phone, restaurant, password);
+        managerForm.child(phno.getText().toString()).setValue(manager);
 
         Toast.makeText(ValidationForm.this, "Its Done!!!", Toast.LENGTH_SHORT).show();
     }

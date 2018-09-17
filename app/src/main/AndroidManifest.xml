@@ -25,11 +25,13 @@
         <activity android:name=".SectorChoice" />
         <activity android:name=".PersonSelection" />
         <activity android:name=".AdminActivity" />
-        <activity android:name=".ManagerActivity" />
         <activity android:name=".CustomerActivity" />
         <activity android:name=".ManagerEntryActivity" />
         <activity android:name=".ValidationForm" />
-        <activity android:name=".ManagerLogin"></activity>
+        <activity android:name=".ManagerLogin" />
+        <activity android:name=".ManagerActivity" />
+        <activity android:name=".ManPlatterView" />
+        <activity android:name=".ManPlatterAdd"></activity>
     </application>
 
 </manifest>

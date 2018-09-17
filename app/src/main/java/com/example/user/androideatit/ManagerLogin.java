@@ -1,6 +1,7 @@
 package com.example.user.androideatit;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -56,6 +57,9 @@ public class ManagerLogin extends AppCompatActivity {
                             Manager user = dataSnapshot.child(edtPhone.getText().toString()).getValue(Manager.class);
                             if (user.getPassword().equals(edtPassword.getText().toString())) {
                                 Toast.makeText(ManagerLogin.this, "Sign in Successfully!", Toast.LENGTH_SHORT).show();
+
+                                Intent ManagerActivity = new Intent(ManagerLogin.this, ManagerActivity.class);
+                                startActivity(ManagerActivity);
 
                             } else {
                                 Toast.makeText(ManagerLogin.this, "Wrong Password!!!", Toast.LENGTH_SHORT).show();
