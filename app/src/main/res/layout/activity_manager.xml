@@ -15,7 +15,7 @@
 
         <Button
             android:id="@+id/allplatterId"
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="ALL PLATTER"
             android:background="@color/fbutton_color_orange"
@@ -24,7 +24,7 @@
             />
         <Button
             android:id="@+id/addplatterId"
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="ADD PLATTER"
             android:background="@color/fbutton_color_green_sea"
@@ -33,7 +33,7 @@
             />
         <Button
             android:id="@+id/deleteplatterId"
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="DELETE PLATTER"
             android:background="@color/fbutton_color_pumpkin"

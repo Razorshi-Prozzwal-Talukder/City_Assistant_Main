@@ -30,8 +30,8 @@ public class PersonSelection extends AppCompatActivity {
         admin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent MainActivity= new Intent(PersonSelection.this, MainActivity.class);
-                startActivity(MainActivity);
+                Toast.makeText(PersonSelection.this, "Amdin Panel!!!", Toast.LENGTH_SHORT).show();
+
             }
         });
 
@@ -46,7 +46,10 @@ public class PersonSelection extends AppCompatActivity {
         customer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PersonSelection.this, "Select as a Customer.", Toast.LENGTH_SHORT).show();
+
+                Intent MainActivity= new Intent(PersonSelection.this, MainActivity.class);
+                startActivity(MainActivity);
+
             }
         });
     }
