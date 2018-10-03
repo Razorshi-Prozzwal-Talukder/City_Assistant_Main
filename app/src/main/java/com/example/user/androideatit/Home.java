@@ -78,7 +78,6 @@ public class Home extends AppCompatActivity
         txtFullName.setText(Common.currentUser.getName());
 
         //Load Menu
-
         recycler_menu = findViewById(R.id.recycler_menu);
         recycler_menu.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
@@ -161,7 +160,7 @@ public class Home extends AppCompatActivity
         public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
             return null;
         }
-//asdasdasdasdadadadasdad
+
         @Override
         public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
 

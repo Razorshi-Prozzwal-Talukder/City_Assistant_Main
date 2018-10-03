@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/item7"
+        android:title="TanguarHawor"/>
+    <item android:id="@+id/item8"
+        android:title="Jadukata"/>
+    <item android:id="@+id/item9"
+        android:title="Dolura"/>
+
+
+</menu>

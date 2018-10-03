@@ -8,6 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="white">
+        <item name="android:textColor">#ffff</item>
+    </style>
+
     <style name="SignUpButtonDesign">
         <item name="android:background">#3aa6a3</item>
     </style>
@@ -20,9 +24,26 @@
         <item name="android:background">#1785da</item>
     </style>
 
+
+
     <style name="Attractiveplaces">
         <item name="android:background">#bc2aa8</item>
     </style>
+    <style name="Sylhet">
+        <item name="android:background">#b914e118</item>
+    </style>
+    <style name="Sunamgonj">
+        <item name="android:background">#d42ab7bc</item>
+    </style>
+    <style name="Moulvibazar">
+        <item name="android:background">#fa1edc</item>
+    </style>
+    <style name="Hobigonj">
+        <item name="android:background">#daf4df56</item>
+    </style>
+
+
+
 
     <style name="Admin">
         <item name="android:background">#e20e20</item>
