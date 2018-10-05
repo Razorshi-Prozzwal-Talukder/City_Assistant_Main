@@ -32,12 +32,9 @@
         <activity android:name=".ManagerActivity" />
         <activity android:name=".ManPlatterView" />
         <activity android:name=".ManPlatterAdd" />
-        <activity
-            android:name=".Home"
-            android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme" />
         <activity android:name=".PlaceSelection" />
-        <activity android:name=".PlaceProfile"></activity>
+        <activity android:name=".PlaceProfile" />
+        <activity android:name=".UserHome"></activity>
     </application>
 
 </manifest>

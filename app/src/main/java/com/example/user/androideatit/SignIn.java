@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.user.androideatit.Common.Common;
+//import com.example.user.androideatit.Common.Common;
 import com.example.user.androideatit.Model.User;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -55,12 +55,11 @@ public class SignIn extends AppCompatActivity {
                             //Get User information
                             mDialog.dismiss();
                             User user = dataSnapshot.child(edtPhone.getText().toString()).getValue(User.class);
+
                             if (user.getPassword().equals(edtPassword.getText().toString())) {
 //                                Toast.makeText(SignIn.this, "Sign in Successfully!", Toast.LENGTH_SHORT).show();
-                                Intent homeIntent = new Intent(SignIn.this, Home.class);
-                                Common.currentUser = user;
-                                startActivity(homeIntent);
-                                finish();
+                                Intent UserHome = new Intent(SignIn.this, UserHome.class);
+                                startActivity(UserHome);
 
                             } else {
                                 Toast.makeText(SignIn.this, "Wrong Password!!!", Toast.LENGTH_SHORT).show();

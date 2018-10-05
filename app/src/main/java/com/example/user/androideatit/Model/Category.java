@@ -1,30 +1,39 @@
 package com.example.user.androideatit.Model;
 
 public class Category {
-    private String Name;
-    private String Image;
+    String title, image, description;
 
-    public Category(){
+    //constructor
+    public Category(){}
+
+    public Category(String title, String image, String description) {
+        this.title = title;
+        this.image = image;
+        this.description = description;
     }
 
-    public Category(String name, String image){
-        Name = name;
-        Image = image;
+    //getter and setter
+    public String getTitle() {
+        return title;
     }
 
-    public String getName() {
-        return Name;
-    }
-
-    public void setName(String name) {
-        Name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getImage() {
-        return Image;
+        return image;
     }
 
     public void setImage(String image) {
-        Image = image;
+        this.image = image;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

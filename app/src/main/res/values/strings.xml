@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndroidEatit</string>
+    <string name="app_name">City Assistant</string>
     <string name="slogan">Welcome tO Sylhet. Here i am your assistent. Order me what do you want. i am always ready for you.</string>
     <string name="welcome">City Assistant</string>
     <string name="sectorview">Dear sir, I am always ready to serve you. See, Here are tow Options. Choose what you have wanted to know.</string>
@@ -28,9 +28,6 @@
     <string name="action_settings">Settings</string>
 
 
-
-
-
     <!--Place Description-->
     <string name="jaflong">Despite the loss of its former splendor due to unrestricted mining and crushing of stones, Jaflong is still a ‘must-see’ destination for tourists visiting Sylhet. Flowing from the north Khasi mountains, the river Dauki enters Bangladesh under the name ‘Piyain’, along the bank of which lies the spectacular Jaflong.\n
 About 62 km north-east from Sylhet city, Jaflong is in the East Jaflong Union under Guainghat Upazilla. Visitors can hire boats to go to the Zero Point and see the beautiful hanging bridge over the Dauki. Just across the river on the western side are the villages Sangrampunji and Nakshiapunji, which are accessible through ferries or rented boats. Just beside Nakshiapunji is Jaflong Tea Garden which is a top tourist attraction.\n
@@ -44,7 +41,6 @@ Though tourists come in large numbers in winter, one has to visit Jaflong in the
 </string>
 
 
-
     <string name="ratargul">Ratargul is the only freshwater swamp forest in Bangladesh. Despite its existence over a vast stretch of swampland in the not too distant past, the swamp forest now occupies an area of only two square kilometres. A dense forest comprising mostly native hijol and koroch trees, Ratargul offers a sanctuary for different species of birds, monkeys, snakes and other reptiles.\n
  A dense forest comprising mostly native hijol and koroch trees, Ratargul offers a sanctuary for different species of birds, monkeys, snakes and other reptiles.\n
 
@@ -52,7 +48,6 @@ Ratargul is in close proximity of three rivers. Flowing respectively from the so
 
 The best time to visit Ratargul Swamp Forest is early in the morning or early in the evening in the rainy season. That’s when one would be enthralled by the existence of the local fauna including different species of birds and monkeys. As the water recedes with the departure of the rainy season it becomes muddy. And in winter it is possible to roam about the forest on foot.
 </string>
-
 
 
     <string name="lalakhal">Lalakhal,which is another top tourist attraction in Jaintapur Upazilla, is covered with hills, natural forests, tea gardens, and rivers under the Jainta Hill which comprises part of the Meghalaya Ranges of India. Flowing from the Indian part, the river Myntdu enters Lalakhal as the Saree and meets the river Guaiyan after passing Sarighat. Over a stretch of nearly 12 km of the river from Lalakhal to Sarighat, the colour of the water stays transparent green in winter (as well as in other seasons when it does not rain) due to the minerals flowing with water and the sandy river bed.\n
@@ -64,13 +59,11 @@ A tourist can experience green water river, Range of mountain and Tea Garden- at
 </string>
 
 
-
     <string name="bichanakandi">Bisnakandi is a village situated in Rustompur Union under Guainghat Upazilla. This is where many layers of the Khasi mountain meet at a single point from both sides. Flowing from above is a high fall. Adding to its charm are dark clouds hugging the mountain in the rainy season. And flowing underneath towards Bholaganj is a branch of the Piyain. Along the stream flowing from high up in the mountain come huge boulders that are deposited and mined in Bisnakandi.\n
  This is where many layers of the Khasi mountain meet at a single point from both sides. Flowing from above is a high fall. Adding to its charm are dark clouds hugging the mountain in the rainy season.\n
 
 Much like Jaflong, Bisnakandi is mostly a quarry. Winter is not a suitable time to visit Bisnakandi due to mechanised mining and stone-laden boats and lorries. The absence of such nuisance makes the rainy season the perfect time to visit the beautiful Bisnakandi that coalesces the charms of high mountains, sinuous rivers, graceful falls and dancing clouds.
 </string>
-
 
 
     <string name="bholagonj">Bholagonj, the largest stone quarry in Bangladesh, is 33 km away to the north from Sylhet city. Flowing respectively from the Khasi hill in the north and Dauki in the east, the rivers Dholai and the Piyain meet at Companigonj Upazilla Sadar, which is 27 km away from Sylhet city on the Salutikor-Bholagonj Road. Just six kilometres from there is Bholagonj— a place that boasts of rows of hills, rivers, falls and quarries.\n
@@ -83,7 +76,6 @@ The illustrious charm of Bholagonj as portrayed by Lindsay is no more to be foun
 
 Tourists who love walking can set off at Bholagonj and move eastwards past Doyar Bazaar, Mayar Bazaar, Uthma, Turong, Upur, Domdoma and Bitthorgul before reaching Bisnakandi. It will take about four hours to cover a distance of about 12 km, and on the way back tourists can travel to Sylhet city by road.\n
 </string>
-
 
 
     <string name="khadim">About 10 kilometres from Sylhet city on the Sylhet-Jaflong Highway past the Shrine of Shah Paran is Khadimnagar Intersection. A left turn from there leads to Khadimnagar Tea Garden. Waiting to greet tourists with its absorbing lush green warmth just about five kilometres from the Highway through the tea gardens is Khadimnagar Rainforest comprising1,673 acres of hills and natural forest surrounded by six tea gardens — Choragang and Habibnagar on the East, Borjan and Kalagul on the West, Gulni on the North, and Khadimnagar on the South. Officially recognised as a national forest, Khadimnagar Rainforest operates with support from USAID.\n
@@ -99,7 +91,6 @@ Even though most parts of this road are brick-laid one can drive there. However,
 </string>
 
 
-
     <string name="tanguwarhawor">At the foot of the Meghalaya ranges in the middle of Tahirpur and Dharmapasha Upazilla under Sunamgonj district in north-east Sylhet is a vast swampland popularly known as Tangoar Haor that spans over an area of nearly 100 square kilometres. Cascading from the Meghalaya about 30 waterfalls flow into this large water body engendering a charm that is truly rare. In 2000, it was internationally recognised as a Ramseur site. After the Sundarbans, it is the second Ramseur site in Bangladesh. Prior to that, in 1999, the government of Bangladesh earmarked Tangoar Haor as an ecologically critical area.\n
  Tangoar Haor, which is a crucial hub for biodiversity, is home to a diverse range of birds. In winter, numerous migratory birds join the local birds giving rise to an eye-soothing abundance of fauna.\n
 
@@ -111,7 +102,6 @@ Tangoar Haor is worth visiting in winter (December to February) when tourists wo
 </string>
 
 
-
     <string name="jadukata">Bangladesh is crisscrossed by rivers, and beautiful rivers are always an attraction for tourists. The Jadukata – one of the most beautiful rivers in Bangladesh – is situated in Laurergorh under Tahirpur Upazilla in Sunamgonj District.\n
  Previously called the Renuka, this river flows from the Meghalaya ranges. The shrine of Hazrat Shah Arefin (R) is situated beside the river. Spectacularly visible behind the shrine (in the rainy season) is a waterfall.\n
  On the other side of the river is a beautiful hill popularly known as Bariker Tilla, behind which there is a church. Beside the church is a narrow westward road that leads to the village of the Garo indigenous community. Past the Garo village is the Borochora Stone Quarry and Takerghat.\n
@@ -119,12 +109,10 @@ Tangoar Haor is worth visiting in winter (December to February) when tourists wo
 </string>
 
 
-
     <string name="dolura">Not far away from Sunamganj town, Dolura is yet another tourist attraction.\n
 
 Kissed by Meghalayan ranges, Dolura is just past the village Narayontola – where indigenous people live. The high hills and the river Cholti flowing from one side together with its sandy banks and crystal clear water attract tourists. The martyrs’ memorial and the cemetery where 48 martyred freedom fighters of 1971 are resting in peace are not to be missed.
 </string>
-
 
 
     <string name="madhobkundo">It is situated in Barlekha Upazila in Moulvibazar District, Sylhet Division. The waterfall is a popular tourist spot in Bangladesh. Big boulders, surrounding forest, and the adjoining streams attracts many tourists for picnic parties and day trips.\n
@@ -150,7 +138,6 @@ In winter this swampland is inhabited by migratory as well as local birds. In ad
 
 Although most tourists visit Baikka Beel during winter, this swampland assumes an unparalleled beauty in the rainy season.
 </string>
-
 
 
     <string name="shatchori">Sathchori National ForestSathchori National Forest is situated in Roghunandon Hill at Chunnarughat Upazilla under Habiganj District in Sylhet Division. Previously known as Roghunandon Reserve Forest, this national forest partitions Sathchori Tea Garden and Chaklapunji Tea Garden. There are some other tea gardens near the forest which was actually named after seven choras (creeks) flowing from the hills.\n
