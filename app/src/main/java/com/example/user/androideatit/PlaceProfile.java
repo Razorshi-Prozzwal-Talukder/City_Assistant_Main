@@ -96,5 +96,43 @@ public class PlaceProfile extends AppCompatActivity {
             imageView.setImageResource(R.drawable.srimongol);
             textView.setText(R.string.srimongol);
         }
+
+
+//        if(placeName.equals("dibirhawor")){
+//            imageView.setImageResource(R.drawable.dibirhawor);
+//            textView.setText(R.string.dibirhawor);
+//        }
+        if(placeName.equals("humhum")){
+            imageView.setImageResource(R.drawable.humhum);
+            textView.setText(R.string.humhum);
+        }
+        if(placeName.equals("madhobpurlake")){
+            imageView.setImageResource(R.drawable.madhobpurlake);
+            textView.setText(R.string.madhobpurlake);
+        }
+//        if(placeName.equals("komolarani")){
+//            imageView.setImageResource(R.drawable.komolarani);
+//            textView.setText(R.string.komolarani);
+//        }
+        if(placeName.equals("sankarpasha")){
+            imageView.setImageResource(R.drawable.songkorpasha);
+            textView.setText(R.string.sankarpasha);
+        }
+        if(placeName.equals("simulbagan")){
+            imageView.setImageResource(R.drawable.simulbagan);
+            textView.setText(R.string.simulbagan);
+        }
+        if(placeName.equals("hasonraja")){
+            imageView.setImageResource(R.drawable.hasonraja);
+            textView.setText(R.string.hasonraja);
+        }
+        if(placeName.equals("barikka")){
+            imageView.setImageResource(R.drawable.barikka);
+            textView.setText(R.string.barikka);
+        }
+        if(placeName.equals("niladri")){
+            imageView.setImageResource(R.drawable.niladri);
+            textView.setText(R.string.niladri);
+        }
     }
 }

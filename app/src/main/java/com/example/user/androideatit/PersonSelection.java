@@ -20,20 +20,20 @@ public class PersonSelection extends AppCompatActivity {
         setContentView(R.layout.activity_person_selection);
 
         personText = findViewById(R.id.persontext);
-        admin = findViewById(R.id.adminid);
+//        admin = findViewById(R.id.adminid);
         manager = findViewById(R.id.managerid);
         customer = findViewById(R.id.customerid);
 
         Typeface face = Typeface.createFromAsset(getAssets(),"fonts/Amelia Script.otf");
         personText.setTypeface(face);
 
-        admin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(PersonSelection.this, "Amdin Panel!!!", Toast.LENGTH_SHORT).show();
-
-            }
-        });
+//        admin.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(PersonSelection.this, "Amdin Panel!!!", Toast.LENGTH_SHORT).show();
+//
+//            }
+//        });
 
         manager.setOnClickListener(new View.OnClickListener() {
             @Override

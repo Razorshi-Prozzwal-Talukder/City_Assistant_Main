@@ -12,15 +12,17 @@ import android.view.ViewGroup;
 
 import com.example.user.androideatit.Model.Category;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 
 public class UserHome extends AppCompatActivity {
 
-    RecyclerView mRecyclerView;
-    FirebaseDatabase mFirebaseDatabase;
-    DatabaseReference mRef;
-
+    private RecyclerView mRecyclerView;
+    private FirebaseDatabase mFirebaseDatabase;
+    private DatabaseReference mRef;
+    private FirebaseRecyclerAdapter<Category, ViewHolder>firebaseRecyclerAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,57 +42,45 @@ public class UserHome extends AppCompatActivity {
 
         //send query to database
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        mRef = mFirebaseDatabase.getReference("Category");
+        Query query = mFirebaseDatabase.getReference().child("Category");
+        FirebaseRecyclerOptions<Category> options =
+                new FirebaseRecyclerOptions.Builder<Category>()
+                        .setQuery(query, Category.class)
+                        .build();
+        firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Category, ViewHolder>(options){
+
+            @Override
+            protected void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull Category model) {
+                holder.setDetails(getApplicationContext(), model.getTitle(), model.getDescription(), model.getImage());
+            }
+
+            @NonNull
+            @Override
+            public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+                View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.row, viewGroup, false);
+////                        return null;
+                ViewHolder viewHolder = new ViewHolder(view);
+                return viewHolder;
+            }
+
+        };
+
+        //set adapter to recycler View
+        mRecyclerView.setAdapter(firebaseRecyclerAdapter);
     }
 
     //load data into recycler view
 
-//    Category.class,
-//    R.layout.row,
-//    ViewHolder.class,
-//    mRef
-
     @Override
     protected void onStart() {
         super.onStart();
-        FirebaseRecyclerAdapter<Category, ViewHolder>firebaseRecyclerAdapter =
-                new FirebaseRecyclerAdapter<Category, ViewHolder>(){
+        firebaseRecyclerAdapter.startListening();
 
-                    @Override
-                    protected void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull Category model) {
-                        holder.setDetails(getApplicationContext(), model.getTitle(), model.getDescription(), model.getImage());
-                    }
+    }
 
-                    @NonNull
-                    @Override
-                    public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-                        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.row, viewGroup, false);
-////                        return null;
-                        ViewHolder viewHolder = new ViewHolder(view);
-                        return viewHolder;
-                    }
-
-
-
-
-
-//                    @Override
-//                    protected void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull Category model) {
-//                            holder.setDetails(getApplicationContext(), model.getTitle(), model.getDescription(), model.getImage());
-//                    }
-//
-//                    @NonNull
-//                    @Override
-//                    public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-//                        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.row, viewGroup, false);
-////                        return null;
-//                        ViewHolder viewHolder = new ViewHolder(view);
-//                        return viewHolder;
-//                    }
-
-                };
-
-        //set adapter to recycler View
-        mRecyclerView.setAdapter(firebaseRecyclerAdapter);
+    @Override
+    protected void onStop() {
+        super.onStop();
+        firebaseRecyclerAdapter.stopListening();
     }
 }

@@ -104,6 +104,52 @@ public class PlaceSelection extends AppCompatActivity implements PopupMenu.OnMen
             intent.putExtra("name","shatchori");
             startActivity(intent);
         }
+
+//        if(menuItem.getItemId()==R.id.item15){
+//            intent = new Intent(PlaceSelection.this,PlaceProfile.class);
+//            intent.putExtra("name","dibirhawor");
+//            startActivity(intent);
+//        }
+        if(menuItem.getItemId()==R.id.item16){
+            intent = new Intent(PlaceSelection.this,PlaceProfile.class);
+            intent.putExtra("name","hakaluki");
+            startActivity(intent);
+        }
+        if(menuItem.getItemId()==R.id.item17){
+            intent = new Intent(PlaceSelection.this,PlaceProfile.class);
+            intent.putExtra("name","humhum");
+            startActivity(intent);
+        }
+        if(menuItem.getItemId()==R.id.item18){
+            intent = new Intent(PlaceSelection.this,PlaceProfile.class);
+            intent.putExtra("name","madhobpurlake");
+            startActivity(intent);
+        }
+        if(menuItem.getItemId()==R.id.item20){
+            intent = new Intent(PlaceSelection.this,PlaceProfile.class);
+            intent.putExtra("name","sankarpasha");
+            startActivity(intent);
+        }
+        if(menuItem.getItemId()==R.id.item21){
+            intent = new Intent(PlaceSelection.this,PlaceProfile.class);
+            intent.putExtra("name","simulbagan");
+            startActivity(intent);
+        }
+        if(menuItem.getItemId()==R.id.item22){
+            intent = new Intent(PlaceSelection.this,PlaceProfile.class);
+            intent.putExtra("name","hasonraja");
+            startActivity(intent);
+        }
+        if(menuItem.getItemId()==R.id.item23){
+            intent = new Intent(PlaceSelection.this,PlaceProfile.class);
+            intent.putExtra("name","barikka");
+            startActivity(intent);
+        }
+        if(menuItem.getItemId()==R.id.item24){
+            intent = new Intent(PlaceSelection.this,PlaceProfile.class);
+            intent.putExtra("name","niladri");
+            startActivity(intent);
+        }
         return false;
     }
 

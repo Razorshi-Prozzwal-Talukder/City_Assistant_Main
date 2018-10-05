@@ -8,5 +8,14 @@
     <item android:id="@+id/item9"
         android:title="Dolura"/>
 
+    <item android:id="@+id/item21"
+        android:title="Shimul Bagan"/>
+    <item android:id="@+id/item22"
+        android:title="Hason Raja Museum"/>
+    <item android:id="@+id/item23"
+        android:title=" Baricca tila"/>
+    <item android:id="@+id/item24"
+        android:title="Niladri Lake"/>
+
 
 </menu>

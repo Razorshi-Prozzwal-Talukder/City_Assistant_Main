@@ -4,4 +4,9 @@
     <item android:id="@+id/item14"
         android:title="Shatchori"/>
 
+    <!--<item android:id="@+id/item19"-->
+        <!--android:title="Komola Ranir Dighi"/>-->
+    <item android:id="@+id/item20"
+        android:title="Sankar Pasha Sahi Mosjid"/>
+
 </menu>

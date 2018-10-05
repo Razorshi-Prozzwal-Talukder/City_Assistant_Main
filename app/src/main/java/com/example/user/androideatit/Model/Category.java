@@ -4,7 +4,9 @@ public class Category {
     String title, image, description;
 
     //constructor
-    public Category(){}
+    public Category(){
+
+    }
 
     public Category(String title, String image, String description) {
         this.title = title;
