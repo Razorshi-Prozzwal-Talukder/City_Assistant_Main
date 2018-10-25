@@ -34,8 +34,6 @@ public class UserHome extends AppCompatActivity {
         setContentView(R.layout.activity_user_home);
 
 
-
-
         //TOOLBAR
         Toolbar toolbar = findViewById(R.id.toolbarId);
         setSupportActionBar(toolbar);
@@ -104,16 +102,11 @@ public class UserHome extends AppCompatActivity {
     }
 
 
-
     @Override
     protected void onStop() {
         super.onStop();
         firebaseRecyclerAdapter.stopListening();
     }
-
-
-
-
 
 
 }
