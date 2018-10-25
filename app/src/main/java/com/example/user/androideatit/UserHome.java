@@ -1,11 +1,15 @@
 package com.example.user.androideatit;
 
 import android.support.annotation.NonNull;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,6 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 
 public class UserHome extends AppCompatActivity {
+    private DrawerLayout drawer;
 
     private RecyclerView mRecyclerView;
     private FirebaseDatabase mFirebaseDatabase;
@@ -28,10 +33,19 @@ public class UserHome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_home);
 
-        //ActionBar
-        ActionBar actionBar = getSupportActionBar();
-        //set title
-        actionBar.setTitle("Item List");
+
+
+
+        //TOOLBAR
+        Toolbar toolbar = findViewById(R.id.toolbarId);
+        setSupportActionBar(toolbar);
+        drawer = findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer,toolbar,
+                R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
+
+
 
         //RecyclerView
         mRecyclerView = findViewById(R.id.recyclerView);
@@ -69,6 +83,7 @@ public class UserHome extends AppCompatActivity {
         mRecyclerView.setAdapter(firebaseRecyclerAdapter);
     }
 
+
     //load data into recycler view
 
     @Override
@@ -78,9 +93,27 @@ public class UserHome extends AppCompatActivity {
 
     }
 
+
+    @Override
+    public void onBackPressed() {
+        if(drawer.isDrawerOpen(GravityCompat.START)){
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+
+
     @Override
     protected void onStop() {
         super.onStop();
         firebaseRecyclerAdapter.stopListening();
     }
+
+
+
+
+
+
 }

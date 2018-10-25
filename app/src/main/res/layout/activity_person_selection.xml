@@ -30,23 +30,12 @@
         android:padding="20dp"
         android:orientation="vertical">
 
-        <!--<Button-->
-            <!--style="@style/Admin"-->
-            <!--android:id="@+id/adminid"-->
-            <!--android:text="Admin"-->
-            <!--android:textColor="@android:color/white"-->
-            <!--android:padding="20dp"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginLeft="147dp"-->
-            <!--android:layout_marginTop="30dp"-->
-            <!--android:layout_marginBottom="30dp"-->
-            <!--/>-->
 
         <Button
             style="@style/Manager"
             android:id="@+id/managerid"
             android:text="Manager"
+            android:textStyle="bold"
             android:textColor="@android:color/white"
             android:padding="20dp"
             android:layout_width="match_parent"
@@ -58,7 +47,8 @@
         <Button
             style="@style/Customer"
             android:id="@+id/customerid"
-            android:text="Customer/Visitor"
+            android:text="USERS"
+            android:textStyle="bold"
             android:textColor="@android:color/white"
             android:padding="20dp"
             android:layout_width="match_parent"

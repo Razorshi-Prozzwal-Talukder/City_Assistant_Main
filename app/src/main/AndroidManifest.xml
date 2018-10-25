@@ -34,7 +34,8 @@
         <activity android:name=".ManPlatterAdd" />
         <activity android:name=".PlaceSelection" />
         <activity android:name=".PlaceProfile" />
-        <activity android:name=".UserHome"></activity>
+        <activity android:name=".UserHome"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 
 </manifest>
